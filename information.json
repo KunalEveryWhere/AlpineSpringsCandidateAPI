@@ -1,0 +1,63 @@
+"MongoDBDeatils": {
+    "Usernane": "AlpineSpringsAdmin",
+    "Password": "XrVyftA2hV9M5sg",
+    "DataSource": "AlpineSprings",
+    "Database": "AlpineSpringsCandidate",
+    "Collection": "BasicInformation",
+    "WhiteListedIPs": "0.0.0.0/0",
+    "DataAPIDeatils": {
+        "URLEndPoint": "https://data.mongodb-api.com/app/data-obada/endpoint/data/v1",
+        "keyName": "KeyForCandidate",
+        "APIKey": "BZm37rvAkTfhTx9v4UlBMiKUid2ngmQi61PvkduD7yadNLx2ljuvBuyU4Ae7js1P",
+        "dataSource": "AlpineSprings",
+        "database": "AlpineSpringsCandidate",
+        "collection": "BasicInformation",
+        "contentType": "application/json"
+    }
+}
+
+"POST Data Schema":{
+    "firstName": "Joe",
+    "middleLastName": "Doe",
+    "sexualOrientation": "Male", //options Male, Female, Others
+    "emailAddress": "joedoe@mail.com",
+    "dateOfBirth": "01/03/1981", //formart dd/mm/yyyy
+    "addressFirstLine": "21st East Street",
+    "addressSecondLine": "Wellington Road, Eastern District",
+    "addressCity": "London",
+    "addressCountry": "Great Britain",
+    "addressPostalCode": "10001",
+    "APIKey": "[please add the provided API key]"
+}
+
+                        // Sample Code:
+
+                        // var axios = require('axios');
+                        // var data = JSON.stringify({
+                        //     "collection": "BasicInformation",
+                        //     "database": "AlpineSpringsCandidate",
+                        //     "dataSource": "AlpineSprings",
+                        //     "projection": {
+                        //         "_id": 1
+                        //     }
+                        // });
+
+                        // var config = {
+                        //     method: 'post',
+                        //     url: 'https://data.mongodb-api.com/app/data-obada/endpoint/data/v1/action/findOne',
+                        //     headers: {
+                        //       'Content-Type': 'application/json',
+                        //       'Access-Control-Request-Headers': '*',
+                        //       'api-key': 'BZm37rvAkTfhTx9v4UlBMiKUid2ngmQi61PvkduD7yadNLx2ljuvBuyU4Ae7js1P',
+                        //     },
+                        //     data: data
+                        // };
+
+                        // axios(config)
+                        //     .then(function (response) {
+                        //         console.log(JSON.stringify(response.data));
+                        //     })
+                        //     .catch(function (error) {
+                        //         console.log(error);
+                        //     });
+
